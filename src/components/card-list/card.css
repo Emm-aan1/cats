@@ -10,6 +10,7 @@
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
+  flex-wrap: wrap;
 }
 
 .card-contain:hover {
@@ -22,4 +23,26 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+@media screen and (max-width:1020px) {
+  .cards {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .cards {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card-contain {
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
