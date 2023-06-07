@@ -1,5 +1,6 @@
-// import logo from './logo.svg';
+// import { useState } from 'react';
 import './App.css';
+
 import { Component } from 'react';
 import CardList from './components/card-list/CardComponent';
 import SearchList from './components/search-box/SearchComp';
@@ -42,6 +43,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1 className="title">List Of Cats</h1>
         <SearchList searchHandler={onSearch} />
         <CardList cats={filterM} />
       </div >
@@ -49,5 +51,7 @@ class App extends Component {
     );
   }
 }
+
+
 
 export default App;

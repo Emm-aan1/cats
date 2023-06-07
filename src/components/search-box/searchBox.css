@@ -3,8 +3,9 @@
   border: none;
   outline: none;
   padding: 5px;
-  padding-left: 45px;
+  padding-left: 40px;
   width: 150px;
   line-height: 30px;
-  margin: 10px auto 30px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
 }
