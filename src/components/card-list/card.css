@@ -32,6 +32,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .card-contain img {
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width:600px) {
