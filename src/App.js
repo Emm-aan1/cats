@@ -1,9 +1,9 @@
-// import { useState } from 'react';
 import './App.css';
 
 import { Component } from 'react';
 import CardList from './components/card-list/CardComponent';
 import SearchList from './components/search-box/SearchComp';
+
 
 class App extends Component {
   constructor() {
@@ -37,8 +37,8 @@ class App extends Component {
     const { cats, searching } = this.state;
     const { onSearch } = this;
 
-    const filterM = cats.filter((monster) => {
-      return monster.name.toLocaleLowerCase().includes(searching)
+    const filterM = cats.filter((cat) => {
+      return cat.name.toLocaleLowerCase().includes(searching)
     })
 
     return (
@@ -51,7 +51,6 @@ class App extends Component {
     );
   }
 }
-
 
 
 export default App;
